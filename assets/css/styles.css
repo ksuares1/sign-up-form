@@ -5,13 +5,58 @@
     position:fixed;
  }
  
- 
+.attribution a {
+color: hsl(228, 45%, 44%);
+     }
+
+      
  .attribution { 
     font-size: 11px; 
     text-align: center; 
 }
+ 
+/* buttons */
+ .claim, .trial{
+    border-radius:10px;
+    border:none;
+ }
+
+ .trial{
+    background: hsl(248, 32%, 49%);
+    color:white;
+ }
+
+.terms{
+    color:red;
+}
+
+.input-fields{
+    background:white;
+}
+/* grid */
 
 
-.attribution a {
-color: hsl(228, 45%, 44%);
-     }
+
+
+
+
+
+     /* Media Queries */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1400px;
+  }
+}
