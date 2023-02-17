@@ -12,7 +12,15 @@
  main{
   margin: 150px;
   padding: 50px;
+  text-align: center;
  }
+
+
+
+/* .customer-info{
+
+} */
+
 .attribution a {
   color: hsl(228, 45%, 44%);
      }
@@ -45,13 +53,22 @@ footer{
 
 .input-fields{
     background:white;
+    padding:20px;
+    border-radius:8px;
 }
-
+.info{
+  margin:10px;
+  padding:20px;
+  width:50%;
+  border:1px solid;
+  border-radius: 8px;
+  color:hsl(246, 25%, 77%);
+}
 .row{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 50%;
+  width: 90%;
 }
 
 .col{
@@ -71,6 +88,10 @@ h1{
   font-weight: 100;
 }
 
+.trial{
+  padding:20px;
+  border-radius:8px;
+}
      /* Media Queries */
 
 @media (min-width: 768px) {
