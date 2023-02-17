@@ -15,8 +15,10 @@
   text-align: center;
  }
 
-
-
+ .error-icon{
+  width:5%;
+  height:15%;
+ }
 
 
 .attribution a {
@@ -35,7 +37,7 @@ footer{
 }
  
 /* buttons */
- .claim, .trial{
+ .claim{
     border-radius:10px;
     border:none;
  }
@@ -43,11 +45,12 @@ footer{
  .trial{
     background: hsl(248, 32%, 49%);
     color:white;
-    width:49%;
+    width:75%;
     margin:30px;
     padding:20px;
     border-radius:8px;
     font-size: 16px;
+    border:none;
  }
 
 
@@ -69,7 +72,7 @@ footer{
 .biz-info{
     margin: auto;
     padding: 30px;
-    width: 45%;
+    width: 50%;
     height: 50%;
 
 }
@@ -83,7 +86,7 @@ footer{
 
 .input-fields{
     background:white;
-    width:50%;
+    width:75%;
     height:75%;
     padding:20px;
     border-radius:10px;
@@ -109,7 +112,7 @@ footer{
 .col{
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex-basis: 50%;
   flex: 1;
 }
 h1{
@@ -147,5 +150,6 @@ h1{
 @media (min-width: 1200px) {
   .container {
     width: 1400px;
+
   }
 }
