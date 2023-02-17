@@ -51,25 +51,24 @@ footer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 50%;
 }
 
 .col{
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex-basis: 50%;
   flex: 1;
 }
 h1{
   color:white;
   font-weight: 700;
-  width:55%;
+  
 }
 
 .company-info{
   color:white;
   font-weight: 100;
-  width:65%;
 }
 
      /* Media Queries */
