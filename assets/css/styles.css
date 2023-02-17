@@ -18,6 +18,7 @@
 
 
 
+
 .attribution a {
   color: hsl(228, 45%, 44%);
      }
@@ -66,11 +67,11 @@ footer{
 
 
 .biz-info{
-  display: flex;
-  margin:0 auto;
-  width:45%;
-  height:50%;
-align-content:center;
+    margin: auto;
+    padding: 30px;
+    width: 45%;
+    height: 50%;
+
 }
 
 .terms{
