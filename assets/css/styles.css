@@ -42,8 +42,11 @@ footer{
  .trial{
     background: hsl(248, 32%, 49%);
     color:white;
-    width:55%;
+    width:45%;
     margin:30px;
+    padding:20px;
+    border-radius:8px;
+    font-size: 16px;
 
  }
 
@@ -64,7 +67,8 @@ footer{
 
 
 .bus-info{
-  margin:35px;
+  margin:0 auto;
+  height:50%
 }
 
 .terms{
@@ -105,8 +109,13 @@ footer{
 h1{
   color:white;
   font-weight: 700;
-  
 }
+
+.services {
+ font-size:12px;
+ color:hsl(246, 25%, 77%);
+}
+
 
 .company-info{
   color:white;
@@ -114,10 +123,7 @@ h1{
   font-size:16px;
 }
 
-.trial{
-  padding:20px;
-  border-radius:8px;
-}
+
      /* Media Queries */
 
 @media (min-width: 768px) {
