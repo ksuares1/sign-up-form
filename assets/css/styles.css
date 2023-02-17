@@ -2,17 +2,29 @@
     background-image:url("../images/bg-intro-desktop.png");
     font-size: 16px;
     background-color: hsl(0, 100%, 74%);
-    position:fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
  }
  
+
+ main{
+  margin: 150px;
+  padding: 50px;
+ }
 .attribution a {
-color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
      }
 
       
  .attribution { 
     font-size: 11px; 
     text-align: center; 
+    
+}
+
+footer{
+   margin-top: auto;
 }
  
 /* buttons */
@@ -33,7 +45,7 @@ color: hsl(228, 45%, 44%);
 .input-fields{
     background:white;
 }
-/* grid */
+
 .row{
   display: flex;
   flex-direction: row;
@@ -47,8 +59,13 @@ color: hsl(228, 45%, 44%);
   flex-basis: 100%;
   flex: 1;
 }
+h1{
+  color:white;
+}
 
-
+.company-info{
+  color:white;
+}
 
      /* Media Queries */
 
