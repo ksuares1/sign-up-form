@@ -42,12 +42,11 @@ footer{
  .trial{
     background: hsl(248, 32%, 49%);
     color:white;
-    width:45%;
+    width:49%;
     margin:30px;
     padding:20px;
     border-radius:8px;
     font-size: 16px;
-
  }
 
 
@@ -66,9 +65,12 @@ footer{
 
 
 
-.bus-info{
+.biz-info{
+  display: flex;
   margin:0 auto;
-  height:50%
+  width:45%;
+  height:50%;
+align-content:center;
 }
 
 .terms{
@@ -84,7 +86,7 @@ footer{
     /* box-shadow */
    
 }
-.info{
+.firstName , .lastName , .email , .password{
   margin:10px;
   padding:20px;
   width:75%;
