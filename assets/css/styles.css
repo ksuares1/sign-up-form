@@ -5,6 +5,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
  }
  
 
@@ -61,10 +62,14 @@ footer{
 }
 h1{
   color:white;
+  font-weight: 700;
+  width:55%;
 }
 
 .company-info{
   color:white;
+  font-weight: 100;
+  width:65%;
 }
 
      /* Media Queries */
