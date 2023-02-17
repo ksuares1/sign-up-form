@@ -17,9 +17,6 @@
 
 
 
-/* .customer-info{
-
-} */
 
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -45,7 +42,30 @@ footer{
  .trial{
     background: hsl(248, 32%, 49%);
     color:white;
+    width:55%;
+    margin:30px;
+
  }
+
+
+
+.claim{
+  margin:10px;
+  padding:20px;
+  width:95%;
+  border:1px solid;
+  border-radius: 10px;
+  background-color: hsl(154, 59%, 51%);
+  font-size:16px;
+  color:white;
+}
+
+
+
+
+.bus-info{
+  margin:35px;
+}
 
 .terms{
     color:red;
@@ -53,28 +73,33 @@ footer{
 
 .input-fields{
     background:white;
+    width:50%;
+    height:75%;
     padding:20px;
-    border-radius:8px;
+    border-radius:10px;
+    /* box-shadow */
+   
 }
 .info{
   margin:10px;
   padding:20px;
-  width:50%;
+  width:75%;
   border:1px solid;
   border-radius: 8px;
   color:hsl(246, 25%, 77%);
+  font-size:16px;
 }
 .row{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;   
 }
 
 .col{
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
+  flex-basis: 100%;
   flex: 1;
 }
 h1{
@@ -86,6 +111,7 @@ h1{
 .company-info{
   color:white;
   font-weight: 100;
+  font-size:16px;
 }
 
 .trial{
