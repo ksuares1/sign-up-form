@@ -125,10 +125,11 @@ h1{
   color:white;
   font-weight: 700;
   font-size:40px;
-  width: 65%;
-  margin:85px;
+  width: 45%;
+  margin:0px;
   margin-bottom: 5px;
   padding:10px;
+  text-align: left;
  }
 
 .services {
@@ -141,7 +142,7 @@ h1{
   color:white;
   font-weight: 300;
   width:500px;
-
+  text-align: left;
 }
 
 
