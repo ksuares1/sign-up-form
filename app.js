@@ -1,16 +1,23 @@
-let first = document.querySelector(".firstName");
-let last = document.querySelector(".lasttName");
-let mail = document.querySelector(".email");
-let pass = document.querySelector(".password");
+const inputs = document.getElementsByTagName("input");
+
 
 function information(){
-if (first !== "") {
-  console.log("Please enter your" + first);
-}
-  else if(first === ""){
-    console.log("Welcome," +first);
+  for(let i=0; i<inputs.length; i++){
+    inputs[i].addEventListener('click', function () {
+            const error = document.getElementsByClassName('error');
+            const errorIcon = document.getElementsByClassName('error-icon');
+    });
+            if (!this.value) {
+                this.classList.add('invalid');
+                error[i].classList.add('visible');
+                errorIcon[i].classList.add('visible');
+            } else {
+                this.classList.remove('invalid');
+                error[i].classList.remove('visible');
+                errorIcon[i].classList.remove('visible');
+            }
+ 
   }
 }
+
 information();
-// let contactInfo=document.querySelector(".claim");
-// claim.addEventlistener("click", information);
