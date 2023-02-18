@@ -45,7 +45,8 @@ footer{
  .trial{
     background: hsl(248, 32%, 49%);
     color:white;
-    width:75%;
+    width:65%;
+    height:25%;
     margin:30px;
     padding:20px;
     border-radius:8px;
@@ -86,7 +87,7 @@ footer{
 
 .input-fields{
     background:white;
-    width:75%;
+    width:65%;
     height:85%;
     padding:20px;
     border-radius:10px;
@@ -117,7 +118,13 @@ footer{
 }
 h1{
   color:white;
-  font-weight: 700;
+  font-weight: 900;
+  font-size:40px;
+  width: 65%;
+  margin: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding:20px;
 }
 
 .services {
@@ -131,6 +138,9 @@ h1{
   font-weight: 100;
   font-size:16px;
 }
+
+
+
 
 
      /* Media Queries */
@@ -150,6 +160,7 @@ h1{
 @media (min-width: 1200px) {
   .container {
     width: 1400px;
-
+  
   }
+
 }
