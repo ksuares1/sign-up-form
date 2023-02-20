@@ -1,62 +1,43 @@
-const form = document.getElementById("form");
+let validName = document.getElementById("first-name");
+let lastName = document.getElementById("last-name");
+let password = document.getElementById("user-password");
+let email = document.getElementById("user-email");
+let validationMsg = document.querySelector(".validation-msg");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-let firstName = document.getElementsByClassName(".firstname").value;
-let lastName = document.getElementsByClassName(".lastname").value;
-let email = document.getElementsByClassName(".email").value;
-let password = document.getElementsByClassName(".password").value;
- 
-if (firstName === "") {
-    addErrorTo("firstname", "First Name is required");
-  } else {
-    removeErrorFrom("firstname");
-  }
-
-  if (lastName === "") {
-    addErrorTo("lastname", "Last Name is required");
-  } else {
-    removeErrorFrom("lastname");
-  }
-
-  if (email === "") {
-    addErrorTo("email", "Email is required");
-  } else if (!isValid(email)) {
-    addErrorTo("email", "Email is not valid");
-  } else {
-    removeErrorFrom("email");
-  }
-
-  if (password === "") {
-    addErrorTo("password", "Password is required");
-  } else {
-    removeErrorFrom("password");
-  }
-});
-
-function addErrorTo(field, message) {
-  const formControl = form[field].parentNode;
-  formControl.classList.add("error");
-
-  const small = formControl.querySelector("small");
-  small.innerText = message;
+function validate() {
+  if (
+    email.includes("@") &&
+    validName.value != "" &&
+    lastName.value != "" &&
+    password.value != "" &&
+    email.value != ""
+  )
+    checkinfo();
 }
 
-function removeErrorFrom(field) {
-  const formControl = form[field].parentNode;
-  formControl.classList.remove("error");
+function checkinfo() {
+  if (validName.value == "") {
+    document.getElementById("firstName-error").style.visibility = "visible";
+    document
+      .querySelector(".name-label")
+      .querySelector(".disable").style.display = "block";
+  }
+  if (lastName.value == "") {
+    document.getElementById("lastName-error").style.visibility = "visible";
+    document
+      .querySelector(".lastname-label")
+      .querySelector(".disable").style.display = "block";
+  }
+  if (email.value == "") {
+    document.getElementById("userEmail-error").style.visibility = "visible";
+    document
+      .querySelector(".email-label")
+      .querySelector(".disable").style.display = "block";
+  }
+  if (password.value == "") {
+    document.getElementById("userPassword-error").style.visibility = "visible";
+    document
+      .querySelector(".pass-label")
+      .querySelector(".disable").style.display = "block";
+  }
 }
-
-function isValid(email) {
-  var re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-}
-
-// function information() {
-//   if (first == "") {
-//     alert("Please enter your first name.");
-//   }
-// }
-// information();

@@ -39,6 +39,7 @@
 
 footer{
    margin-top: auto;
+   text-align: center;
 }
  
 /* buttons */
@@ -62,7 +63,7 @@ footer{
 
 
 
-.claim{
+.submit-info{
   margin:10px;
   padding:20px;
   width:95%;
@@ -75,7 +76,7 @@ footer{
    font-weight:600px;
 }
 
-.form-control small{
+/* .form-control small{
   color:hsl(0, 100%, 74%);
   position:absolute;
   bottom:-20px;
@@ -83,7 +84,7 @@ footer{
   opacity:0;
   text-align:right;
   font-weight:500;
-}
+} */
 
 
 
@@ -113,7 +114,7 @@ footer{
     /* box-shadow */
    
 }
-.firstname , .lastname , .email , .password{
+#first-name , #last-name , #user-email , #userPassword{
   margin:10px;
   padding:15px;
   width:85%;
@@ -146,7 +147,7 @@ h1{
   text-align: left;
  }
 
-.services {
+.btn-term {
  font-size:12px;
  color:hsl(246, 25%, 77%);
 }
