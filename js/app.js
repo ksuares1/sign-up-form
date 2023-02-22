@@ -17,10 +17,8 @@ function validate() {
 
 function checkinfo() {
   if (validName.value == "") {
-    document.getElementById("firstName-error").style.visibility = "visible";
-    document
-      .querySelector(".name-label")
-      .querySelector(".disable").style.display = "block";
+     document.getElementById("firstName-error").append("First Name is required ");
+      
   }
   if (lastName.value == "") {
     document.getElementById("lastName-error").style.visibility = "visible";

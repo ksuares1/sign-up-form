@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c9c946b91.js" crossorigin="anonymous"></script>
     <title>Frontend Mentor | Intro component with sign up form</title>
     
   </head>
@@ -30,41 +31,35 @@
     
 
     <div class="col input-fields">
-    <form class="input-form">
+    
     <div class="form-control">
     <input type="text" class="first-name" id="first-name" autocomplete="off"  placeholder="First Name" required />  
-    <div class="firstName-error" id="firstName-error">
-            </div>
-            <label for="first-name" class="name-label"
-              ><p class="disable"></p>
-              </label>
+    <i class="fa-solid fa-circle-check"></i>
+    <i class="fa-solid fa-circle-exclamation"></i>
+    <small>FirstName is required</small>
           </div>
  
 
-  <div class="input-form">
+  <div class="form-control">
     <input type="text" class="last-name" id="last-name" autocomplete="off"  placeholder="Last Name" required />
-     <div class="lastName-error" id="lastName-error">
-      </div>
-            <label for="last-name" class="lastname-label">
-              <p class="disable"></p>
-              </label>
+    <i class="fa-solid fa-circle-check"></i>
+    <i class="fa-solid fa-circle-exclamation"></i>
+            <small>LastName is required</small>
           </div>
   
-  <div class="input-form">
+  <div class="form-control">
     <input type="text" class="user-email" id="user-email" autocomplete="off" placeholder="Email Address"  pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required />
-    <div class="userEmail-error" id="userEmail-error"></div>
-            <label for="user-email" id="userEmail-error" class="email-label">
-            <p class="disable"></p>
-              </label>
+    <i class="fa-solid fa-circle-check"></i>
+    <i class="fa-solid fa-circle-exclamation"></i>
+    <small>Email is not valid</small>
           </div>
  
 
     <div class="form-control">
     <input type="text" class="userPassword" id="userPassword" autocomplete="off" placeholder="Password" required />
-     <div class="userPassword-error" id="userPassword-error"></div>
-            <label for="user-pass" class="pass-label">
-              <p class="disable"></p>
-              </label>
+    <i class="fa-solid fa-circle-check"></i>
+    <i class="fa-solid fa-circle-exclamation"></i>
+    <small>Password is required</small>
           </div>
     
         <div class="input-form">
